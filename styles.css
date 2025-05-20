@@ -1,19 +1,76 @@
-.navbar>.container,
-.navbar>.container-fluid,
-.navbar>.container-lg,
-.navbar>.container-md,
-.navbar>.container-sm,
-.navbar>.container-xl,
-.navbar>.container-xxl {
-    justify-content: start;
-    background-color: aqua;
+:root {
+    --color-primary: #235ad1;
+    --color-accent: #041945;
+}
+
+p,
+a {
+    color: white;
+}
+
+header {
+    padding: 1vh 1vw;
+    background-color: var(--color-primary);
+    margin-bottom: 1vh;
+}
+
+.site-title {
+    font-size: xx-large;
+    font-family: "Pacifico", cursive;
 }
 
 .block {
-    background-color: yellowgreen;
+    background-color: var(--color-primary);
+    padding: 2vh 1vw;
+    margin-bottom: 1vh;
+    border-radius: 1vw;
 }
 
-footer{
-    background-color: aqua;
+.anti-grow-col {
+    flex-grow: unset;
+    flex-shrink: unset;
+    flex-basis: content;
+}
+
+.names {
+    font-family: "Caveat", cursive;
+    font-size: x-large;
+}
+
+.names-links {
+    align-content: center;
+    font-family: "Bad Script", cursive;
+}
+
+.link-names {
+    font-family: "Bad Script", cursive;
+    margin: 0;
+}
+
+.descript {
+    font-family: "Caveat", cursive;
+    font-size: x-large;
+}
+
+.links {
+    text-decoration: none;
+}
+
+.links:hover {
+    color: var(--color-accent);
+}
+
+footer {
+    background-color: var(--color-primary);
     text-align: center;
+    margin-bottom: 0;
+    border-radius: 1vw 1vw 0 0;
+    padding-bottom: 0;
+}
+
+footer p {
+    font-family: "Caveat", cursive;
+    font-size: larger;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
