@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Мария Пименова",
+        "id": "maria_p",
+        "name_link": "@hlebojarka",
+        "description": "Комикс о девочке, которая боролась с ночными кошмарами",
+        "links": [
+            "Акомикс",
+            "https://acomics.ru/~ninochka/1"
+        ]
+    },
+    {
+        "name": "Паулина Димитрова",
+        "id": "paulina_d",
+        "name_link": "https://vk.com/melocotonuu",
+        "description": "'Project-J' - Комикс в жанре фэнтези про парня по имени Дженсон и его верную подругу медведицу Терри, их приключения в волшебном мире, который хочет захватить один самопровозглашенный король мира Меркиз.",
+        "links": [
+            "Project-J",
+            "https://vk.com/album-183754342_286734186"
+        ]
+    },
+    {
+        "name": "Лина Горностай | Axic0n",
+        "id": "lina_g",
+        "name_link": "@sijansk",
+        "description": "Горностай Инди, нарушивший границу мира Теней, вынужден искать пропавшую богиню Аркумиду.",
+        "links": [
+            "Ссылки",
+            "https://vk.com/topic-151330474_53203670"
+        ]
+    },
+    {
+        "name": "Влад Cмирнов | Влад ОГНЕСЕРД",
+        "id": "vlad_s",
+        "name_link": "@troopak_art",
+        "description": "Комиксы о приключениях ребят на просторав ММОРПГ",
+        "links": [
+            "Акомикс",
+            "https://acomics.ru/~planeswalcers"
+        ]
+    },
+    {
+        "name": "Adele Kairu | Kairu",
+        "id": "adele_k",
+        "name_link": "@kairuuuuuuuuuu",
+        "description": "Комикс о становлении и приключениях космических пиратов",
+        "links": [
+            "Лор",
+            "https://vk.com/@kairuuuuuuuuuu-vselennaya-kevina"
+        ]
+    },
+    {
+        "name": "Люлалаба Джорджо",
+        "id": "lulalaba_d",
+        "name_link": "@monstryugan",
+        "description": "Действия разворачиваются на планете Шах'рас и за ее пределами истории затрагивают службу и жизнь сотрудников службы порядка",
+        "links": [
+            "Акомикс",
+            "https://acomics.ru/~story-gooho/about"
+        ]
+    },
+    {
+        "name": "Леша-Писатель Сухов",
+        "id": "losha_s",
+        "name_link": "@bunker_lexi",
+        "description": "Данная история будет повествовать об обычном парне в реалиях современной России  по имени Алексей, внезапно получившим таинсвенный инопланетный артефакт.",
+        "links": [
+            "Акомикс",
+            "https://acomics.ru/~A24195025"
+        ]
+    },
+    {
+        "name": "Владислава Тимсан",
+        "id": "vladislava_t",
+        "name_link": "@redbloo",
+        "description": "Фэнтези-триллер про неудачливую богиню, которая хочет вернуться к богам, но сталкивается с кознями судьбы ",
+        "links": [
+            "Акомикс",
+            "https://acomics.ru/~AntiTrix"
+        ]
+    },
+    {
+        "name": "Настя Белова",
+        "id": "nastya_b",
+        "name_link": "@sodium__chloride",
+        "description": "Комиксы не связаны друг с другом, пока пишу только синглы, обычно с жанрами мистика, роматика, немного хоррор",
+        "links": [
+            "Ссылки",
+            "https://vk.com/@sodium__chloride-sol-vse-raboty"
+        ]
+    }
+]

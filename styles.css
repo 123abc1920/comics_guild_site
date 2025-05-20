@@ -1,0 +1,19 @@
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+    justify-content: start;
+    background-color: aqua;
+}
+
+.block {
+    background-color: yellowgreen;
+}
+
+footer{
+    background-color: aqua;
+    text-align: center;
+}
