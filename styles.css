@@ -21,7 +21,7 @@ i {
 header {
     margin-bottom: 3vh;
     padding: 1vh 1vw;
-    border-radius: 0 0 1vw 1vw;
+    border-radius: 0 0 1vmax 1vmax;
     background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
     box-shadow: 12px 12px 2px 1px var(--color-shadow);
 }
@@ -40,7 +40,7 @@ main {
 .block {
     padding: 1vmin 2vmin;
     margin-bottom: 1vh;
-    border-radius: 1vw;
+    border-radius: 1vmax;
     background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
     box-shadow: 12px 12px 2px 1px var(--color-shadow);
 }
@@ -89,7 +89,7 @@ footer {
     text-align: center;
     margin-bottom: 0;
     margin-top: 3vh;
-    border-radius: 1vw 1vw 0 0;
+    border-radius: 1vmax 1vmax 0 0;
     padding-bottom: 0;
 }
 
