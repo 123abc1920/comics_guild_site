@@ -10,7 +10,7 @@ a {
     color: white;
 }
 
-i{
+i {
     margin-left: 1vw;
 }
 
@@ -24,8 +24,13 @@ header {
 
 .site-title {
     font-family: "Pacifico", cursive;
-    font-size: 5vh;
+    font-size: 5vmin;
     text-shadow: var(--color-shadow) 10px 10px;
+}
+
+main {
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
 .block {
@@ -44,30 +49,30 @@ header {
 
 .names {
     font-family: "Caveat", cursive;
-    font-size: 4vh;
+    font-size: 4vmin;
 }
 
 .names-links {
     align-content: center;
     font-family: "Bad Script", cursive;
-    font-size: 2vh;
+    font-size: 2vmin;
 }
 
 .link-names {
     font-family: "Bad Script", cursive;
     margin: 0;
-    font-size: 2vh;
+    font-size: 2vmin;
 }
 
 .descript {
     font-family: "Caveat", cursive;
-    font-size: 3vh;
+    font-size: 3vmin;
     text-shadow: var(--color-shadow) 0 0 5px;
 }
 
 .links {
     text-decoration: none;
-    font-size: 2vh;
+    font-size: 2vmin;
 }
 
 .links:hover {
@@ -88,17 +93,4 @@ footer p {
     font-size: 2vh;
     padding-top: 1vh;
     padding-bottom: 1vh;
-}
-
-@media (min-width: 700px) {
-    main {
-        padding-left: 10vw;
-        padding-right: 10vw;
-    }
-}
-
-@media (max-width: 699px) {
-    main {
-        padding: 0;
-    }
 }
