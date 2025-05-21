@@ -88,5 +88,15 @@
             "Ссылки",
             "https://vk.com/@sodium__chloride-sol-vse-raboty"
         ]
+    },
+    {
+        "name": "Марк Локвуд",
+        "id": "mark_l",
+        "name_link": "@key_field",
+        "description": "Комикс о приключении оборотня и эльфа в лоу фэнтези мире",
+        "links": [
+            "Акомикс",
+            "https://acomics.ru/~wolfs-berry"
+        ]
     }
 ]

@@ -10,7 +10,7 @@ a {
     color: white;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -28,7 +28,7 @@ header {
 
 .site-title {
     font-family: "Pacifico", cursive;
-    font-size: 5vmin;
+    font-size: 5.5vmin;
     text-shadow: var(--color-shadow) 10px 10px;
 }
 
@@ -38,7 +38,7 @@ main {
 }
 
 .block {
-    padding: 2vh 1vw;
+    padding: 1vmin 2vmin;
     margin-bottom: 1vh;
     border-radius: 1vw;
     background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
@@ -53,30 +53,31 @@ main {
 
 .names {
     font-family: "Caveat", cursive;
-    font-size: 4vmin;
+    font-size: 4.5vmin;
+    align-content: center;
 }
 
 .names-links {
     align-content: center;
     font-family: "Bad Script", cursive;
-    font-size: 2vmin;
+    font-size: 3vmin;
 }
 
 .link-names {
     font-family: "Bad Script", cursive;
     margin: 0;
-    font-size: 2vmin;
+    font-size: 3vmin;
 }
 
 .descript {
     font-family: "Caveat", cursive;
-    font-size: 3vmin;
+    font-size: 3.5vmin;
     text-shadow: var(--color-shadow) 0 0 5px;
 }
 
 .links {
     text-decoration: none;
-    font-size: 2vmin;
+    font-size: 3vmin;
 }
 
 .links:hover {
@@ -87,14 +88,28 @@ footer {
     background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
     text-align: center;
     margin-bottom: 0;
+    margin-top: 3vh;
     border-radius: 1vw 1vw 0 0;
     padding-bottom: 0;
-    box-shadow: 12px 12px 2px 1px var(--color-shadow);
 }
 
 footer p {
     font-family: "Caveat", cursive;
-    font-size: 2vh;
+    font-size: 3vmin;
     padding-top: 1vh;
     padding-bottom: 1vh;
+}
+
+@media (min-width: 700px) {
+    main {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+}
+
+@media (max-width: 699px) {
+    main {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
 }
