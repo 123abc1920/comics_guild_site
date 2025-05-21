@@ -11,19 +11,19 @@ fetch('./database.json')
 
         const name = document.createElement('p');
         name.textContent = item.name;
-        name.classList.add('col', 'anti-grow-col', "text-decoration-underline", "names");
+        name.classList.add('col', 'anti-grow-col', "text-decoration-underline", "names", "text-wrap");
         name_info.appendChild(name);
 
         const name_link = document.createElement('p');
         name_link.textContent = "(" + item.name_link + ")";
-        name_link.classList.add("col", "fst-italic", "names-links");
+        name_link.classList.add("col", "fst-italic", "names-links", "text-wrap");
         name_info.appendChild(name_link);
 
         block.appendChild(name_info);
 
         const description = document.createElement('p');
         description.textContent = item.description;
-        description.classList.add("descript");
+        description.classList.add("descript", "text-wrap");
         block.appendChild(description);
 
         const links = document.createElement('div');
@@ -33,7 +33,7 @@ fetch('./database.json')
             if (ind % 2 == 0) {
                 const title = document.createElement('p');
                 title.textContent = it + ":";
-                title.classList.add('col', "anti-grow-col", "link-names");
+                title.classList.add('col', "anti-grow-col", "link-names", "text-wrap");
 
                 link_row = document.createElement('div');
                 link_row.classList.add("row");
@@ -42,7 +42,7 @@ fetch('./database.json')
                 const link = document.createElement('a');
                 link.textContent = it;
                 link.href = it;
-                link.classList.add("col", "names-links", "links");
+                link.classList.add("col", "names-links", "links", "text-wrap");
 
                 link_row.appendChild(link);
                 links.appendChild(link_row);

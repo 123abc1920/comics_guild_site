@@ -9,14 +9,14 @@ a {
 }
 
 header {
+    margin-bottom: 1vh;
     padding: 1vh 1vw;
     background-color: var(--color-primary);
-    margin-bottom: 1vh;
 }
 
 .site-title {
-    font-size: xx-large;
     font-family: "Pacifico", cursive;
+    font-size: 5vh;
 }
 
 .block {
@@ -34,26 +34,29 @@ header {
 
 .names {
     font-family: "Caveat", cursive;
-    font-size: x-large;
+    font-size: 4vh;
 }
 
 .names-links {
     align-content: center;
     font-family: "Bad Script", cursive;
+    font-size: 2vh;
 }
 
 .link-names {
     font-family: "Bad Script", cursive;
     margin: 0;
+    font-size: 2vh;
 }
 
 .descript {
     font-family: "Caveat", cursive;
-    font-size: x-large;
+    font-size: 3vh;
 }
 
 .links {
     text-decoration: none;
+    font-size: 2vh;
 }
 
 .links:hover {
@@ -70,7 +73,20 @@ footer {
 
 footer p {
     font-family: "Caveat", cursive;
-    font-size: larger;
+    font-size: 2vh;
     padding-top: 1vh;
     padding-bottom: 1vh;
+}
+
+@media (min-width: 700px) {
+    main {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+}
+
+@media (max-width: 699px) {
+    main {
+        padding: 0;
+    }
 }
