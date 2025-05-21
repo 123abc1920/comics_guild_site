@@ -15,8 +15,17 @@ fetch('./database.json')
         name_info.appendChild(name);
 
         const name_link = document.createElement('p');
-        name_link.textContent = "(" + item.name_link + ")";
+        name_link.textContent = item.name_link;
         name_link.classList.add("col", "fst-italic", "names-links", "text-wrap");
+
+        const copy = document.createElement('i');
+        copy.classList.add("bi", "bi-copy");
+        name_link.appendChild(copy);
+
+        name_link.onclick = function () {
+            navigator.clipboard.writeText(item.name_link);
+        };
+
         name_info.appendChild(name_link);
 
         block.appendChild(name_info);

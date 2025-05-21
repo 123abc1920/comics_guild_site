@@ -1,6 +1,8 @@
 :root {
     --color-primary: #235ad1;
     --color-accent: #041945;
+    --color-secondary: #24a9ce;
+    --color-shadow: #04194537;
 }
 
 p,
@@ -8,22 +10,30 @@ a {
     color: white;
 }
 
+i{
+    margin-left: 1vw;
+}
+
 header {
-    margin-bottom: 1vh;
+    margin-bottom: 3vh;
     padding: 1vh 1vw;
-    background-color: var(--color-primary);
+    border-radius: 0 0 1vw 1vw;
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    box-shadow: 12px 12px 2px 1px var(--color-shadow);
 }
 
 .site-title {
     font-family: "Pacifico", cursive;
     font-size: 5vh;
+    text-shadow: var(--color-shadow) 10px 10px;
 }
 
 .block {
-    background-color: var(--color-primary);
     padding: 2vh 1vw;
     margin-bottom: 1vh;
     border-radius: 1vw;
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    box-shadow: 12px 12px 2px 1px var(--color-shadow);
 }
 
 .anti-grow-col {
@@ -52,6 +62,7 @@ header {
 .descript {
     font-family: "Caveat", cursive;
     font-size: 3vh;
+    text-shadow: var(--color-shadow) 0 0 5px;
 }
 
 .links {
@@ -64,11 +75,12 @@ header {
 }
 
 footer {
-    background-color: var(--color-primary);
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
     text-align: center;
     margin-bottom: 0;
     border-radius: 1vw 1vw 0 0;
     padding-bottom: 0;
+    box-shadow: 12px 12px 2px 1px var(--color-shadow);
 }
 
 footer p {
