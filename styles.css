@@ -57,8 +57,6 @@ header {
     padding-bottom: 1vh;
     padding-left: 2%;
     padding-right: 2%;
-    max-height: 25vmax;
-    overflow: hidden;
 }
 
 .block {
@@ -147,8 +145,8 @@ header {
     box-shadow: 8px 8px 2px 1px var(--color-shadow);
     align-content: center;
     min-height: 30%;
-    max-height: 40%;
-    overflow-y: auto;
+    max-height: 35%;
+    overflow-y: scroll;
 }
 
 .descript p{
@@ -212,6 +210,10 @@ footer p {
     .names-links {
         font-size: small;
     }
+
+    .contain{
+        max-height: 25vmax;
+    }
 }
 
 @media (max-width: 699px) {
@@ -229,5 +231,9 @@ footer p {
     .links,
     .names-links {
         font-size: smaller;
+    }
+
+    .contain{
+        max-height: fit-content;
     }
 }
