@@ -1,13 +1,32 @@
 :root {
-    --color-primary: #235ad1;
+    --color-primary: #2176d7;
     --color-accent: #041945;
-    --color-secondary: #24a9ce;
+    --color-secondary: #6a9fba;
     --color-shadow: #04194537;
+    --color-background-start: #23b3df;
+    --color-background-finsh: #d7e5ee;
+    --color-links: #2585d1;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url(./fonts/gothampro.ttf);
+}
+
+@font-face {
+    font-family: 'Gotham Pro Black';
+    src: url(./fonts/gothampro_black.ttf);
+}
+
+@font-face {
+    font-family: 'Gotham Pro Medium';
+    src: url(./fonts/gothampro_medium.ttf);
 }
 
 p,
 a {
-    color: white;
+    color: var(--color-accent);
+    white-space: normal;
 }
 
 body {
@@ -23,26 +42,49 @@ header {
     padding: 1vh 1vw;
     border-radius: 0 0 1vmax 1vmax;
     background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
-    box-shadow: 12px 12px 2px 1px var(--color-shadow);
 }
 
 .site-title {
-    font-family: "Pacifico", cursive;
+    font-family: "Gotham Pro Black";
     font-size: 5.5vmin;
     text-shadow: var(--color-shadow) 10px 10px;
+    color: white;
+    text-align: center;
 }
 
-main {
-    padding-left: 10vw;
-    padding-right: 10vw;
+.contain {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    max-height: 25vmax;
+    overflow: hidden;
 }
 
 .block {
-    padding: 1vmin 2vmin;
-    margin-bottom: 1vh;
+    padding: 2vmin 2vmin;
     border-radius: 1vmax;
-    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
-    box-shadow: 12px 12px 2px 1px var(--color-shadow);
+    background: linear-gradient(to right, var(--color-background-start), var(--color-background-finsh));
+    min-height: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.photo-container {
+    width: 35%;
+    flex-grow: unset;
+    flex-shrink: unset;
+    flex-basis: unset;
+    text-align: center;
+}
+
+.info-container {
+    width: 65%;
+    flex-grow: unset;
+    flex-shrink: unset;
+    flex-basis: unset;
+    text-align: center;
 }
 
 .anti-grow-col {
@@ -52,36 +94,90 @@ main {
 }
 
 .names {
-    font-family: "Caveat", cursive;
-    font-size: 4.5vmin;
+    font-family: "Gotham Pro Medium";
     align-content: center;
+    background-color: white;
+    border-radius: 50vmax;
+    padding: 1vh 2vw;
+    box-shadow: 8px 8px 2px 1px var(--color-shadow);
 }
 
 .names-links {
     align-content: center;
-    font-family: "Bad Script", cursive;
-    font-size: 3vmin;
+    font-family: "Gotham Pro Medium";
+    margin-top: 1vh;
+    align-content: center;
+    text-align: center;
+    width: 100%;
 }
 
 .link-names {
-    font-family: "Bad Script", cursive;
+    font-family: "Gotham Pro";
     margin: 0;
-    font-size: 3vmin;
+    align-content: center;
+    text-align: end;
+    width: 100%;
+}
+
+.links-row {
+    width: fit-content;
+    height: fit-content;
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    align-content: center;
+    overflow: hidden;
+}
+
+.links-row a,
+.links-row p {
+    display: inline-block;
+    width: fit-content;
+    color: white;
+    margin: 0;
+    text-wrap: nowrap;
 }
 
 .descript {
-    font-family: "Caveat", cursive;
-    font-size: 3.5vmin;
-    text-shadow: var(--color-shadow) 0 0 5px;
+    font-family: "Gotham Pro";
+    background-color: white;
+    border-radius: 1vmax;
+    padding: 1vh 1vw;
+    box-shadow: 8px 8px 2px 1px var(--color-shadow);
+    align-content: center;
+    min-height: 30%;
+    max-height: 40%;
+    overflow-y: auto;
+}
+
+.descript p{
+    text-overflow: ellipsis;
+}
+
+.links-list {
+    background-color: var(--color-links);
+    border-radius: 5vmax;
+    padding: 10px;
+    box-shadow: 8px 8px 2px 1px var(--color-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 15%;
 }
 
 .links {
     text-decoration: none;
-    font-size: 3vmin;
+    font-family: "Gotham Pro";
 }
 
 .links:hover {
     color: var(--color-accent);
+}
+
+.block img {
+    border-radius: 1vmax;
+    box-shadow: 8px 8px 2px 1px var(--color-shadow);
 }
 
 footer {
@@ -94,7 +190,7 @@ footer {
 }
 
 footer p {
-    font-family: "Caveat", cursive;
+    font-family: "Gotham Pro";
     font-size: 3vmin;
     padding-top: 1vh;
     padding-bottom: 1vh;
@@ -105,11 +201,33 @@ footer p {
         padding-left: 10vw;
         padding-right: 10vw;
     }
+
+    .names,
+    .descript {
+        font-size: large;
+    }
+
+    .link-names,
+    .links,
+    .names-links {
+        font-size: small;
+    }
 }
 
 @media (max-width: 699px) {
     main {
         padding-left: 5vw;
         padding-right: 5vw;
+    }
+
+    .names,
+    .descript {
+        font-size: medium;
+    }
+
+    .link-names,
+    .links,
+    .names-links {
+        font-size: smaller;
     }
 }
