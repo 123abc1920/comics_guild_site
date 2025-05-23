@@ -66,7 +66,6 @@ header {
     min-height: 100%;
     min-width: 100%;
     max-height: 100%;
-    overflow: hidden;
 }
 
 .photo-container {
@@ -83,6 +82,8 @@ header {
     flex-shrink: unset;
     flex-basis: unset;
     text-align: center;
+    background-color: transparent;
+    border: none;
 }
 
 .anti-grow-col {
@@ -144,12 +145,11 @@ header {
     padding: 1vh 1vw;
     box-shadow: 8px 8px 2px 1px var(--color-shadow);
     align-content: center;
-    min-height: 30%;
-    max-height: 35%;
+    height: 10vh;
     overflow-y: scroll;
 }
 
-.descript p{
+.descript p {
     text-overflow: ellipsis;
 }
 
@@ -162,6 +162,7 @@ header {
     align-items: center;
     justify-content: center;
     max-height: 15%;
+    margin-bottom: 0;
 }
 
 .links {
@@ -210,10 +211,6 @@ footer p {
     .names-links {
         font-size: small;
     }
-
-    .contain{
-        max-height: 25vmax;
-    }
 }
 
 @media (max-width: 699px) {
@@ -224,16 +221,12 @@ footer p {
 
     .names,
     .descript {
-        font-size: medium;
+        font-size: small;
     }
 
     .link-names,
     .links,
     .names-links {
         font-size: smaller;
-    }
-
-    .contain{
-        max-height: fit-content;
     }
 }
